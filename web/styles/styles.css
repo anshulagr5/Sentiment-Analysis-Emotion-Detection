@@ -1,0 +1,32 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333333;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  }
+    
+.about-button,
+.dataset-button,
+.team-button {
+  cursor: pointer;
+  padding: 8px;
+  margin: 0 10px;
+  background-color: #333333;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  font-size: 14px;
+}
+  
+.about-button:hover,
+.dataset-button:hover,
+.team-button:hover {
+  background-color: #000000;
+}

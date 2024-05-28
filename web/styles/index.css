@@ -1,0 +1,140 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Header Styles */
+header {
+  background-image: url('/images/Assets/bg-demomodel-hero-13e0f9da59e5f1dda870f28c40eec457.webp');
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+  color: white;
+  position: relative;
+}
+
+.nav {
+  display: flex;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.nav button {
+  margin-right: 10px;
+  padding: 10px 10px;
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.header-text {
+  position: absolute;
+  bottom: 90px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+  width: fit-content;
+}
+
+.container {
+  margin-top: 240px;
+  width: 800px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1s ease;
+  overflow: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.flex-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+
+.predict-container,
+.result-container {
+  flex: 1;
+  margin: 0;
+  padding: 20px;
+  box-sizing: border-box;
+  min-width: 0;
+}
+
+.separator {
+  width: 1px;
+  background-color: #ccc;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+input[type="text"] {
+  width: calc(100% - 80px);
+  padding: 25px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.predict-container h3 {
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+.result-container h3 {
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.result-content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 8px;
+}

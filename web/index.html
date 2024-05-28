@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentiment Analysis</title>
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <header>
+        <div class="nav">
+            <a href="dataset.html"><button id="datasetButton" class="top-left-button">Dataset</button></a>
+			<a href="result.html"><button id="resultButton" class ="top-left-button">Model Result</button> </a>
+            <a href="team.html"><button id="teamButton" class="top-left-button">Team</button></a>
+        </div>
+        <h2 class="header-text">Sentiment Analysis & Emotion Detection</h2>
+    </header>
+
+    <div class="container">
+        <div class="flex-container">
+            <div class="predict-container">
+                <h3>Test with your own tweet</h3>
+                <input type="text" id="tweetText" placeholder="Enter tweet text...">
+                <button onclick="searchTweet()">Predict</button>
+            </div>
+			<div class="separator"></div><!-- Separator Line -->
+            <div id="result" class="result-container">
+                <h3>Result</h3>
+                <div class="result-content">
+                    <span>Tag</span>
+                    <span>Value</span>
+                </div>
+				<hr>
+				<div>
+					<div class="result-content">
+						<span>Sentiment</span>
+						<span id="sentimentValue"></span>
+					</div>
+					<div class="result-content">
+						<span>Emotion</span>
+						<span id="emotionValue"></span>
+					</div>
+				</div>
+            </div>
+        </div>
+    </div>
+
+    <footer style="
+        background-color: #f8f9fa; /* Light grey background */
+        padding: 10px; /* Padding around the footer */
+        border-top: 2px solid #dee2e6; /* Light grey border on top */
+        border-radius: 25px 25px 0 0; /* Rounded corners on top */
+        width: 100%; /* Full width of the page */
+        position: fixed; /* Fixed position at the bottom */
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+    ">
+        <div>
+            <p style="
+                margin: 0;
+                color: #05090e; 
+                font-size: 15px;
+            ">
+                &copy; Kamal Nehru Institute of Technology, Sultanpur ( CSE Group -13)
+            </p>
+        </div>
+    </footer>
+
+    <script src="scripts/index.js"></script>
+</body>
+</html>
